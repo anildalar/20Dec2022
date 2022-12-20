@@ -11,10 +11,10 @@ Form element
 
 
 Javascript Events
-1. onclick
-2. onchange
-3. onkeydown
-4. onkeyup - Done
+1. onclick - Done
+2. onchange - Done
+3. onkeyup - Done
+4. 
 
 What is this ?
 In DOM, this referes to current element
