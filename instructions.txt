@@ -1,0 +1,40 @@
+Lecture 64 -
+element.innerHTML vs element.value(Form Element)
+
+
+Form element
+1. input type text
+2. select
+3. textarea
+4. input type radio
+
+
+
+Javascript Events
+1. onclick
+2. onchange
+3. onkeydown
+4. onkeyup - Done
+
+What is this ?
+In DOM, this referes to current element
+
+
+In JS Object {}, this referes to the current object
+
+
+let student = {  //Current Object
+	name:"Anil",
+
+	getName(){
+			console.log(this.name);
+	}
+};
+
+Javascript Data Types
+
+1. JS Object {}
+
+
+
+

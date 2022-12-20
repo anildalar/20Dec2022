@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+        </style>
+        <script>
+            //Before the closing of head tag
+        </script>
+    </head>
+    <body>
+        <div class="myclass">
+            <span>Good Morning</span>
+        </div>
+
+        <form>
+            <input type="text" onkeyup="myfun1(this)">
+            <input type="text" onkeyup="myfun2(this)">
+            <input type="checkbox">
+            <select onchange="myfun4(this)">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <textarea onkeyup="myfun3(this)"></textarea>
+        </form>
+        <script>
+            //I can write JS code before the closing body tag
+            
+            //Lets access the DOM element
+            //Document object model
+            // object.method()
+            // document.getElementById();
+            // document.querySelector();
+
+            // element = tag
+
+            let e1 = document.querySelector('div.myclass');  // L = R    R-> L Associtity of Operator
+            console.log(e1.innerHTML);
+            console.log(e1.innerText);
+
+            //1. Function defination
+            function myfun1(x){ // x is a formal argument , x will contain the current element
+                console.log(x.value);
+            }
+
+            //1. Function defination
+            function myfun2(y){ // y is a formal argument
+                console.log(y.value)// element.value
+            }
+
+            //1. Function defination
+            function myfun3(z){ // y is a formal argument
+                console.log(z.value)// element.value
+            }
+            //1. Function defination
+            function myfun4(a){ // y is a formal argument
+                console.log(a.value)// element.value
+            }
+
+
+            let student1 = {
+                //1. Property:Value
+                name:"Gautam",
+                surname:"Sharma",
+
+                //2. Method/Function
+                getName(){
+                    console.log(this.name)
+
+                    //object.method()
+                    this.getSurname(); // I am calling the function internally
+                },
+                getSurname(){
+                    console.log(this.surname)
+                }
+            }; //JS Object
+
+            student1.getName();
+            //student1.getSurname(); //I am calling the function externally
+
+            //object.method()
+        </script>
+    </body>
+</html>
